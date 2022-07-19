@@ -277,12 +277,15 @@ body{
 @media only screen and (max-width: 576px){
     .header-section {
         text-align: center;
+        display: flex;
+        flex-direction: column;
     }
     .header-section .header-menu {
         margin-top: 17px;
     }
     .header-section .header-menu ul {
         display: flex;
+        justify-content: center;
     }
     .slider-section {
         flex-direction: column-reverse;
