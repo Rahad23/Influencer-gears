@@ -64,21 +64,21 @@ body{
                                 margin-top: 30px;
 }
 .slider-section .slider-section-text .text .button a {
-                                    text-decoration: none;
-                                    background-color: #E02C6D;
-                                    padding: 10px 46px 10px 24px;
-                                    border-radius: 24px;
-                                    font-size: 16px;
-                                    font-weight: 700;
-                                    color: #ffff;
-                                    transition: .5s;
-                                    position: relative;
+                                text-decoration: none;
+                                background-color: #E02C6D;
+                                padding: 10px 46px 10px 24px;
+                                border-radius: 24px;
+                                font-size: 16px;
+                                font-weight: 700;
+                                color: #ffff;
+                                transition: .5s;
+                                position: relative;
 }
 .slider-section .slider-section-text .text .button a i {
-                                    margin-left: 7px;
-                                    transition: .5s;
-                                    position: absolute;
-                                    margin-top: 4px;
+                                margin-left: 7px;
+                                transition: .5s;
+                                position: absolute;
+                                margin-top: 4px;
 }
 .slider-section .slider-section-text .text .button a:hover i{
                                 margin-left: 10px;
@@ -235,6 +235,15 @@ body{
                                 font-size: 14px;
                                 font-weight: 700;
                                 margin-bottom: 7px;
+
+}
+.footer .footer-text p span{
+                                transition: .5s;
+                                cursor: pointer;
+}
+.footer .footer-text p span:hover{
+                                color: #E02C6D;
+                                letter-spacing: 1px;
 }
 .footer .footer-text span {
                                 font-size: 13px;
@@ -254,7 +263,67 @@ body{
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
+                                cursor: pointer;
 }
 .footer-text .icon-social .icon i{
+                                transition: .5s;
+}
+.footer-text .icon-social .icon i:hover{
+                                color: #dc3ceb;
+}
 
+/* Responsive css */
+
+@media only screen and (max-width: 576px){
+    .header-section {
+        text-align: center;
+    }
+    .header-section .header-menu {
+        margin-top: 17px;
+    }
+    .header-section .header-menu ul {
+        display: flex;
+    }
+    .slider-section {
+        flex-direction: column-reverse;
+    }
+    .slider-section .slider-section-img img {
+        height: auto;
+        width: auto;
+    }
+    .slider-section .slider-section-text .text h3 {
+        font-size: 27px;
+        text-align: center;
+    }
+    .slider-section .slider-section-text .text p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .slider-section .slider-section-text {
+        width: 444px;
+        margin-top: 45px;
+    }
+    .slider-section .slider-section-text .text .button {
+        text-align: center;
+    }
+    .ecommerce-logo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 15px;
+        align-items: center;
+        justify-items: center;
+        padding: 25px 8px;
+    }
+    .popular-collection .product-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .future-product {
+        flex-direction: column;
+    }
+    .future-product .fu-p-text h2 {
+        font-size: 31px;
+    }
+    .future-product .fu-p-text p {
+        font-size: 15px;
+    }
 }
